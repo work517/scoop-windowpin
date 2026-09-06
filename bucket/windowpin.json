@@ -4,7 +4,7 @@
     "homepage":  "https://windowpin.com",
     "license":  {
                     "identifier":  "Freeware",
-                    "url":  "https://windowpin.com/en/terms.html"
+                    "url":  "https://windowpin.com/en/terms"
                 },
     "architecture":  {
                          "64bit":  {
@@ -24,7 +24,7 @@
                   "Delete it yourself if you want nothing left behind."
               ],
     "checkver":  {
-                     "url":  "https://windowpin.com/version.json",
+                     "url":  "https://api.windowpin.com/v1/version?channel=stable",
                      "jsonpath":  "$.latest"
                  },
     "autoupdate":  {
@@ -34,7 +34,7 @@
                                                       }
                                         },
                        "hash":  {
-                                    "url":  "https://windowpin.com/version.json",
+                                    "url":  "https://api.windowpin.com/v1/version?channel=stable",
                                     "jsonpath":  "$.sha256"
                                 }
                    }
