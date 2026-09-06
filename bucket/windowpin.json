@@ -1,0 +1,41 @@
+{
+    "version":  "2.4.0",
+    "description":  "Sticky notes that lock to a specific window and move with it.",
+    "homepage":  "https://windowpin.com",
+    "license":  {
+                    "identifier":  "Freeware",
+                    "url":  "https://windowpin.com/en/terms.html"
+                },
+    "architecture":  {
+                         "64bit":  {
+                                       "url":  "https://dl.windowpin.com/stable/2.4.0/WindowPin-2.4.0-win-x64.exe#/WindowPin.exe",
+                                       "hash":  "be43cbeeb926572ad9664d4213c9aebd7fc2da6d46a67fb48dc90be7a9337254"
+                                   }
+                     },
+    "bin":  "WindowPin.exe",
+    "shortcuts":  [
+                      [
+                          "WindowPin.exe",
+                          "WindowPin"
+                      ]
+                  ],
+    "notes":  [
+                  "Notes are stored in %APPDATA%\\WindowPin — that folder survives \u0027scoop uninstall\u0027.",
+                  "Delete it yourself if you want nothing left behind."
+              ],
+    "checkver":  {
+                     "url":  "https://windowpin.com/version.json",
+                     "jsonpath":  "$.latest"
+                 },
+    "autoupdate":  {
+                       "architecture":  {
+                                            "64bit":  {
+                                                          "url":  "https://dl.windowpin.com/stable/$version/WindowPin-$version-win-x64.exe#/WindowPin.exe"
+                                                      }
+                                        },
+                       "hash":  {
+                                    "url":  "https://windowpin.com/version.json",
+                                    "jsonpath":  "$.sha256"
+                                }
+                   }
+}
