@@ -1,5 +1,5 @@
 {
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Sticky notes that lock to a specific window and move with it.",
   "homepage": "https://windowpin.com",
   "license": {
@@ -8,8 +8,8 @@
   },
   "architecture": {
     "64bit": {
-      "url": "https://dl.windowpin.com/stable/3.0.6/WindowPin-3.0.6-win-x64.exe#/WindowPin.exe",
-      "hash": "60220ccd603dbd4237dc57cc7cbe728e3edaf22732b2c3745b2c96eaf25d32e2"
+      "url": "https://dl.windowpin.com/stable/3.0.7/WindowPin-3.0.7-win-x64.exe#/WindowPin.exe",
+      "hash": "e862c30437cce82a4632d8efc7397c7053f3adeedd7f2d6bb1271478832474a1"
     }
   },
   "bin": "WindowPin.exe",
